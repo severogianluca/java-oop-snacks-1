@@ -16,6 +16,11 @@ public class ContoBancario {
         this.saldo = BigDecimal.ZERO;
     }
 
+        public ContoBancario(int numeroConto) {
+        this.numeroConto = numeroConto;
+        this.saldo = BigDecimal.ZERO;
+    }
+
     // metodi pubblici
     public BigDecimal getSaldo() {
         return saldo;
