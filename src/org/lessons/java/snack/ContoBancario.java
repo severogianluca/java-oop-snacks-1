@@ -26,8 +26,16 @@ public class ContoBancario {
         return saldo;
     }
 
+    public int getNumeroConto(){
+        return numeroConto;
+    }
+
     // metodo per il deposito
     public BigDecimal deposito(BigDecimal importo) {
+        if(importo.compareTo(new BigDecimal(0) ) < 0){
+            System.out.println("Non è possibile utlizzare numeri negativi");
+            return saldo;
+        }
         saldo = saldo.add(importo);
         System.out.println("Deposito effettuato con successo! Nuovo saldo: " + saldo);
         return saldo;

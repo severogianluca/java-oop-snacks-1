@@ -37,12 +37,13 @@ public class Main {
         registro.getListaStudenti();
 
         System.out.println();
-        // DEPOSITO
+
         System.out.println("----CONTO BANCARIO----");
+        System.out.println("Numero conto: " + conto.getNumeroConto());
         System.out.println(conto.getSaldo());
+        // DEPOSITO
         conto.deposito(new BigDecimal(30.50));
-        System.out.println(conto.getSaldo());
-        conto.deposito(new BigDecimal(30.50));
+        conto.deposito(new BigDecimal(330.50));
         // PRELIEVO
         conto.prelievo(new BigDecimal(61));
 
