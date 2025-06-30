@@ -33,8 +33,11 @@ public class Main {
         registro.addStudent(stud5);
         registro.addStudent(stud6);
         registro.addStudent(stud7);
-
         registro.getListaStudenti();
+
+        // registro.getListaStudenti();
+
+        
 
         System.out.println();
 
